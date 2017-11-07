@@ -9,6 +9,7 @@ public class DrakeDuck extends AbstractDuck {
         speakBehavior = new SpeakQuack();
         swimBehavior = new SwimGood();
     }
+
     @Override
     public String getInfo() {
         return "I am drake!";
