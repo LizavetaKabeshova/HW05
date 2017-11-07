@@ -13,7 +13,7 @@ public class TrafficLight {
     /**
      * This function with cycle determines the light
      */
-      public static Integer getLight(int value) {
+      public static int getLight(int value) {
         int light = 0;
         if (1 <= value && value <= 2) {
             System.out.println( "the color is red");

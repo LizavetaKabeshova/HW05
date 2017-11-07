@@ -1,10 +1,13 @@
 package com.epam.hw4.horses;
 
-import com.epam.hw4.Behaviors.RunNormal;
-
 public class PurpleHorse extends AbstractHorse{
     public PurpleHorse() {
-        runBehavior = new RunNormal();
+    }
+
+    @Override
+    public int getSpeed() {
+        int speed = 5 + (int) (Math.random() * 10);
+        return speed;
     }
 
     @Override

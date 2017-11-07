@@ -1,11 +1,13 @@
 package com.epam.hw4.horses;
 
-
-import com.epam.hw4.Behaviors.RunFast;
-
 public class WhiteHorse extends AbstractHorse {
     public WhiteHorse() {
-        runBehavior = new RunFast();
+    }
+
+    @Override
+    public int getSpeed() {
+        int speed = 1 + (int) (Math.random() * 5);
+        return speed;
     }
 
     @Override
