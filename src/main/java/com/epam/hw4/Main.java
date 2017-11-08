@@ -50,9 +50,7 @@ public class Main {
                     System.out.println("Write the bet");
                     int amountForHorse = in.nextInt();
                     int winner = racecourse.startRace(horse, horse2, horse3);
-                    System.out.println("The winner is horse number : " +
-                            cashbox.getResult(numberOfHorse, amountForHorse, winner));
-                    System.out.println("Now your balance is " + cashbox.balance);
+                    System.out.println("Your money : " + cashbox.getResult(numberOfHorse, amountForHorse, winner));
                     key = in.nextInt();
                 }
             }

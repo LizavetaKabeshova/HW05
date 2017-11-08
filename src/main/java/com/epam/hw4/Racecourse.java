@@ -5,7 +5,7 @@ import com.epam.hw4.horses.AbstractHorse;
 public class Racecourse {
 
     public String getHorses(AbstractHorse a, AbstractHorse b, AbstractHorse c) {
-        return a.getInfo() + "\n" + b.getInfo() + "\n" + c.getInfo() + "\n";
+        return a.getInfo() + "\n" + b.getInfo() + "\n" + c.getInfo();
     }
 
     public int startRace(AbstractHorse a, AbstractHorse b, AbstractHorse c) {

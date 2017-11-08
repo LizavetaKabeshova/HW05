@@ -18,13 +18,11 @@ public class Cashbox {
         return balance;
     }
 
-    public String getResult(int numberOfHorse, int amountForHorse, int winner) {
+    public int getResult(int numberOfHorse, int amountForHorse, int winner) {
         if (winner == numberOfHorse) {
-            topUpBalance(amountForHorse);
-            return (winner + " - you win!");
+            return topUpBalance(amountForHorse);
         } else {
-            topDownBalance(amountForHorse);
-            return (winner + " - you lose!");
+            return topDownBalance(amountForHorse);
         }
     }
 }
